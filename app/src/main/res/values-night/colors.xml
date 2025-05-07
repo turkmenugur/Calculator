@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#B0BEC5</color>
+    <color name="primary_variant">#78909C</color>
+    <color name="secondary">#4DD0E1</color>
+    <color name="secondary_variant">#26C6DA</color>
+    <color name="background">#121212</color>
+    <color name="surface">#212121</color>
+    <color name="error">#EF9A9A</color>
+    <color name="onPrimary">#000000</color>
+    <color name="onSecondary">#000000</color>
+    <color name="onBackground">#ECEFF1</color>
+    <color name="onSurface">#ECEFF1</color>
+    <color name="onError">#000000</color>
+    <color name="text_secondary">#90A4AE</color>
+    <color name="digit_button_background">#37474F</color>
+    <color name="operator_button_background">@color/secondary</color>
+    <color name="function_button_background">@color/primary</color>
+    <color name="equals_button_background">#26A69A</color>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:colorBackground"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ellipsize="start"
+        android:fontFamily="sans-serif-light"
+        android:gravity="end|bottom"
+        android:maxLines="2"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/flowButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="0" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="
+            buttonClear, buttonDelete, buttonPercent, buttonDivide,
+            button7, button8, button9, buttonMultiply,
+            button4, button5, button6, buttonSubtract,
+            button1, button2, button3, buttonAdd,
+            button0, buttonDecimal, buttonPlusMinus, buttonEquals"
+        app:flow_horizontalGap="8dp"
+        app:flow_horizontalStyle="spread_inside"
+        app:flow_maxElementsWrap="4"
+        app:flow_verticalGap="8dp"
+        app:flow_verticalStyle="spread_inside"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewResult" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonClear"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/function_button_background"
+        android:textColor="@color/onPrimary"
+        android:text="C"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDelete"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/function_button_background"
+        android:textColor="@color/onPrimary"
+        android:text="DEL" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/buttonPercent"
+    style="@style/CircularCalculatorButton"
+    app:backgroundTint="@color/function_button_background"
+    android:textColor="@color/onPrimary"
+    android:text="%" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDivide"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/operator_button_background"
+        android:textColor="@color/onSecondary"
+        android:text="÷" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button7"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="7" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button8"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button9"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="9" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMultiply"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/operator_button_background"
+        android:textColor="@color/onSecondary"
+        android:text="×" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button4"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button5"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button6"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="6" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSubtract"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/operator_button_background"
+        android:textColor="@color/onSecondary"
+        android:text="−" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdd"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/operator_button_background"
+        android:textColor="@color/onSecondary"
+        android:text="+" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button0"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDecimal"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonPlusMinus"
+        style="@style/CircularCalculatorButton"
+        app:backgroundTint="@color/digit_button_background"
+        android:textColor="@color/onSurface"
+        android:text="+/-"/>
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/buttonEquals"
+    style="@style/CircularCalculatorButton"
+    app:backgroundTint="@color/equals_button_background"
+    android:textColor="@color/white"
+    android:text="=" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
